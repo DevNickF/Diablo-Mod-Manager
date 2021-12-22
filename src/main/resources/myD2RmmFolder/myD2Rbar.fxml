@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="myD2RmmFolder.myD2RbarControl">
+   <MenuBar fx:id="myMainBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="32.0" prefWidth="880.0">
+      <Menu mnemonicParsing="false" text="File">
+         <MenuItem mnemonicParsing="false" onAction="#myFileOpen" text="Open…"/>
+         <SeparatorMenuItem mnemonicParsing="false"/>
+         <MenuItem mnemonicParsing="false" onAction="#myFileImport" text="Import..."/>
+         <SeparatorMenuItem mnemonicParsing="false"/>
+         <SeparatorMenuItem mnemonicParsing="false"/>
+         <MenuItem mnemonicParsing="false" onAction="#theGreatEscapeHaha" text="Exit"/>
+      </Menu>
+      <Menu mnemonicParsing="false" text="View">
+         <MenuItem mnemonicParsing="false" onAction="#myPrefsOpen" text="View Prefs File"/>
+         <SeparatorMenuItem mnemonicParsing="false"/>
+         <MenuItem mnemonicParsing="false" onAction="#myArgsOpen" text="View Launch File"/>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Themes">
+         <MenuItem mnemonicParsing="false" onAction="#myBlueTheme" text="Blue Theme"/>
+         <SeparatorMenuItem mnemonicParsing="false"/>
+         <MenuItem mnemonicParsing="false" onAction="#myRedTheme" text="Red Theme"/>
+         <SeparatorMenuItem mnemonicParsing="false"/>
+         <MenuItem mnemonicParsing="false" onAction="#myDarkTheme" text="Gray Theme"/>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Help">
+         <MenuItem mnemonicParsing="false" onAction="#myOpenNexus" text="Link to Nexus"/>
+         <MenuItem mnemonicParsing="false" onAction="#myOpenModDb" text="Link to ModDb"/>
+         <SeparatorMenuItem mnemonicParsing="false"/>
+         <MenuItem mnemonicParsing="false" onAction="#myOpenHome" text="Link to Host Page"/>
+      </Menu>
+   </MenuBar>
+</AnchorPane>
